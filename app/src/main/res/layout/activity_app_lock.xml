@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/primaryInverseColor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="96dp"
+    android:paddingBottom="32dp">
+
+    <ImageView
+        android:id="@+id/lockedAppIcon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        tools:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/lockedAppName"
+        style="@style/TextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="App name" />
+
+    <TextView
+        android:id="@+id/pinDots"
+        style="@style/TextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:letterSpacing="0.3"
+        android:minHeight="40dp"
+        tools:text="●●●" />
+
+    <TextView
+        android:id="@+id/pinMessage"
+        style="@style/TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:minHeight="24dp"
+        tools:text="@string/pin_incorrect" />
+
+    <TextView
+        android:id="@+id/useBiometric"
+        style="@style/TextSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:text="@string/biometric_prompt_title"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <TextView android:id="@+id/pinKey1" style="@style/AppLockKey" android:text="@string/_1" />
+        <TextView android:id="@+id/pinKey2" style="@style/AppLockKey" android:text="@string/_2" />
+        <TextView android:id="@+id/pinKey3" style="@style/AppLockKey" android:text="@string/_3" />
+        <TextView android:id="@+id/pinKey4" style="@style/AppLockKey" android:text="@string/_4" />
+        <TextView android:id="@+id/pinKey5" style="@style/AppLockKey" android:text="@string/_5" />
+        <TextView android:id="@+id/pinKey6" style="@style/AppLockKey" android:text="@string/_6" />
+        <TextView android:id="@+id/pinKey7" style="@style/AppLockKey" android:text="@string/_7" />
+        <TextView android:id="@+id/pinKey8" style="@style/AppLockKey" android:text="@string/_8" />
+        <TextView android:id="@+id/pinKey9" style="@style/AppLockKey" android:text="@string/_9" />
+
+        <ImageView
+            android:id="@+id/pinDelete"
+            style="@style/AppLockKey"
+            android:padding="18dp"
+            android:src="@drawable/ic_delete" />
+
+        <TextView android:id="@+id/pinKey0" style="@style/AppLockKey" android:text="@string/_0" />
+
+        <ImageView
+            android:id="@+id/pinConfirm"
+            style="@style/AppLockKey"
+            android:padding="18dp"
+            android:src="@drawable/ic_check" />
+
+    </GridLayout>
+
+</LinearLayout>
